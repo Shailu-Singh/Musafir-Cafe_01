@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musafirCafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Musafir Cafe</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#review">Testimonials</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-text">WELCOME TO MUSAFIR CAFE</p>
+            <H1>Your Daily Dose of Happiness</H1>
+            <p>
+                Fresh coffe, delicious food and beautiful moments.
+            </p>
+            <a href="#menu" class="hero-btn">Explore Menu☕</a>
+        </div>
+
+        
+         <div class="hero-image">
+            <img src="coffeee.jpeg" alt="A cup of coffee">
+         </div>
+    </section>
+
+    <hr class="class-devider">
+
+ <section class="about" id="about">
+
+    <div class="about-image">
+        <img src="cafe.png" alt="Beautiful cafe interior">
+    </div>
+
+    <div class="about-content">
+        <p class="small-text">OUR STORY</p>
+
+        <h2>A Place Where Every Sip Tells a Story</h2>
+
+        <p><strong>Every Journey Deserves a Coffee Break.</strong><br>
+
+At Musafir Cafe, we believe life is a beautiful journey, and every journey deserves a peaceful pause. Inspired by the spirit of travelers, dreamers, and storytellers, we created a cozy corner where coffee meets conversations and strangers become friends.
+
+Whether you're chasing dreams, sharing stories, or simply enjoying a quiet moment, Musafir Cafe is your little escape from the rush of everyday life.<br>
+
+<strong>Come as a stranger, leave with a story.</strong>
+
+
+        </p>
+
+        <a href="#menu" class="about-btn">Discover More</a>
+    </div>
+</section>
+
+<hr class="section-devider">
+
+
+ <section class="menu-section" id="menu">
+    <div class="menu-heading">
+        <p class="section-tag">TASTE & STORIES</p>
+        <H2>Our Menu</H2>
+        <p>
+            A little something for every mood,
+            every story, and every soul.
+        </p>
+    </div>
+    <div class="menu-cantainer">
+
+        
+         <div class="menu-card">
+            <img src="https://i.pinimg.com/1200x/70/52/18/705218ef5048638e605e7a01c6e8ee6a.jpg" alt="coffee">
+            <div class="menu-info">
+                <h3>Classic Coffee</h3>
+                <p>Warn coffee for quiet thaughts.</p>
+                <span>₹120</span>
+            </div>
+         </div>
+
+        
+          <div class="menu-card">
+            <img src="https://i.pinimg.com/736x/7f/92/2c/7f922cc195321e0feb800a6ef00a5b11.jpg" alt="Cold Coffee">
+            <div class="menu-info">
+                <h3>Cold Coffee</h3>
+                <p>Chilled, creamy and refreshing.</p>
+                <span>₹150</span>
+            </div>
+          </div>
+
+          
+           <div class="menu-card">
+            <img src="https://i.pinimg.com/736x/ad/78/1b/ad781bec9d702a569a67d6e41c7ff362.jpg" alt="Sandwich">
+            <div class="menu-info">
+                <h3>Cheese Sandwich</h3>
+                <p>A delicious bite between stories.</p>
+                <span>₹180</span>
+            </div>
+           </div>
+
+           
+            <div class="menu-card">
+                <img src="https://i.pinimg.com/1200x/e4/c8/47/e4c847570450d2ef6e928ffb953330c3.jpg" alt="Pasta">
+                <div class="menu-info">
+                    <h3>White Sauce Paste</h3>
+                    <p>Creamy comfort in every bite.</p>
+                    <span>₹220</span>
+                </div>
+            </div>
+
+          
+             <div class="menu-card">
+                <img src="https://i.pinimg.com/736x/72/2d/b5/722db50671cf5b3189867c87c29c4552.jpg" alt="Chocolate Cake">
+                <div class="menu-info">
+                    <h3>Chocolate cake</h3>
+                    <p>Sweet moments, one slice at a time.</p>
+                    <span>₹180</span>
+                </div>
+             </div>
+
+             
+              <div class="menu-card">
+                <img src="https://i.pinimg.com/1200x/a2/91/47/a2914718346ba4759a42da6ad3ebff00.jpg" alt="Masala Tea">
+                <div class="menu-info">
+                    <h3>Masala Tea</h3>
+                    <p>A warm sip of comfort</p>
+                    <span>₹80</span>
+                </div>
+              </div>
+    </div>
+ </section>
+
+ <hr class="section-devider">
+
+ <section class="reservation" id="reservation">
+    <div class="reservation-content">
+        <div class="left-side">
+        <h2>✧Reserve your spot!</h2>
+        <p>
+            Walk-ins are always welcome, but we recommend reserving a table in advance during peak hours.
+        </p>
+
+        <form id="reservation-form">
+            <input type="text" id="guest-name" placeholder="Your Name" required>
+            <input type="tel" id="guest-phone" placeholder="Phone Number" required>
+            <input type="date" id="booking-date" required>
+            <input type="time" id="booking-time" required>
+
+            <select id="guest-count" required>
+                <option value="">Number of guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 Person</option>
+                <option value="3">3 Person</option>
+                <option value="4">4 Person</option>
+                <option value="5">5 Person</option>
+                <option value="6"> 6 Person</option>
+            </select>
+
+            <textarea id="special-request" placeholder="Any Special Request?"></textarea>
+            <button type="submit">Reserve Now</button>
+        </form>
+        </div>
+
+    <div class="reservation">
+        <img src="Musafir Cafe at Golden Dusk.png" alt="">
+    </div>
+    </div>
+ </section>
+
+ <hr class="section-devider">
+
+<section class="review" id="review">
+    <h2>Words from Our Musafirs</h2>
+    <p>Every cup has a story, and every guest has a memory.</p>
+
+    <div class="review-slider">
+    <button class="prev-btn" aria-label="Previous review">
+        &#10094;
+    </button>
+
+    <div class="card-container">
+        <div class="review-track">
+
+            <div class="review-card">
+                <img src="aman.jpg" alt="">
+                <h3>Aman Kumar</h3>
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Amazing coffee and a peaceful atmosphere.
+                    A perfect place to relax with friends."
+                </p>
+            </div>
+
+            <div class="review-card">
+                <img src="Ashish.jpeg" alt="">
+                <h3>Ashish Kumar</h3>
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Loved the cozy vibes and delicious food. Definitely visiting again!
+                </p>
+            </div>
+
+            <div class="review-card">
+                <img src="moti.jpeg" alt="">
+                <h3>Bhawna Thakur</h3>
+                <div class="stars">★★★★★</div>
+                <p>
+                   "One of the best cafes to spend quality time. Great service and beautiful ambience."
+                </p>
+            </div>
+
+            <div class="review-card">
+                <img src="https://i.pinimg.com/1200x/68/ab/6c/68ab6cf5e9d07a32a7ff351065aaf68a.jpg" alt="">
+                <h3>Guddu Don</h3>
+                <div class="stars">★★★★★</div>
+                <p>
+                "The cold coffee was fantastic! Such a beautiful and comfortable place."
+                </p>
+            </div>
+
+            <div class="review-card">
+                <img src="Hardesh.jpeg" alt="">
+                <h3>Hardesh Kumar</h3>
+                <div class="stars">★★★★★</div>
+                <p>
+               "Friendly staff, tasty snacks and a lovely atmosphere. Highly recommended!"
+                </p>
+            </div>
+        </div>
+    </div>
+        <button class="next-btn" aria-label="Next review">
+        &#10095;
+    </button>
+</section>
+
+<hr class="section-devider">
+
+ <section class="contact" id="contact">
+    <div class="contact-content">
+    <h2>Let's Connect</h2>
+
+    <p> 
+        Have a question, want to reserve a table,
+        or just want to share a beautiful moment?
+        We would love to hear from you
+    </p>
+
+    <div class="contact-info">
+        <p>📍Location: Jait, Mathura, India</p>
+        <p>📞 Phone Number: 9761475451</p>
+        <p>✉️Email Id: codebyshailu@gmail.com</p>
+    </div>
+
+<form class="contact-form" id="contact-form">
+
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+    >
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+    >
+
+    <textarea
+        name="message"
+        placeholder="Your Message"
+        required
+    ></textarea>
+
+    <button type="submit">Send Message ☕</button>
+
+</form>
+
+    </div>
+
+ </section>
+
+ 
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <h2>Musafir Cafe ☕</h2>
+            <p>
+                Every journey deserves a coffee break.
+                A place where stories begin and
+                memories are made.
+            </p>
+
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#about">Our Story</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-hours">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 9 AM - 10 PM</p>
+            <p>Sat - Sun: 10 AM - 11 PM</p>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Get in Touch</h3>
+            <p>Your Cafe Address</p>
+            <p>+91 XXXXX XXXXX</p>
+            <p>hello@musafircafe.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Musafir Cafe. All Rights Reserved.</p>
+        <p>Made with ☕ & Love</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
