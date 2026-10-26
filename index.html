@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f1e7">
+    <meta name="description" content="Musafir Cafe — fresh coffee, delicious food, and beautiful moments.">
     <title>musafirCafe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#about">Skip to content</a>
     <nav>
         <div class="logo">Musafir Cafe</div>
         <ul>
@@ -141,40 +144,140 @@ Whether you're chasing dreams, sharing stories, or simply enjoying a quiet momen
 
  <hr class="section-devider">
 
- <section class="reservation" id="reservation">
+
+<section class="reservation" id="reservation">
     <div class="reservation-content">
+
+        <!-- Left: Reservation Form -->
         <div class="left-side">
-        <h2>✧Reserve your spot!</h2>
-        <p>
-            Walk-ins are always welcome, but we recommend reserving a table in advance during peak hours.
-        </p>
 
-        <form id="reservation-form">
-            <input type="text" id="guest-name" placeholder="Your Name" required>
-            <input type="tel" id="guest-phone" placeholder="Phone Number" required>
-            <input type="date" id="booking-date" required>
-            <input type="time" id="booking-time" required>
+            <span class="reservation-eyebrow">
+                YOUR TABLE, YOUR MOMENT
+            </span>
 
-            <select id="guest-count" required>
-                <option value="">Number of guests</option>
-                <option value="1">1 Person</option>
-                <option value="2">2 Person</option>
-                <option value="3">3 Person</option>
-                <option value="4">4 Person</option>
-                <option value="5">5 Person</option>
-                <option value="6"> 6 Person</option>
-            </select>
+            <h2>Reserve Your Spot<span>✧</span></h2>
 
-            <textarea id="special-request" placeholder="Any Special Request?"></textarea>
-            <button type="submit">Reserve Now</button>
-        </form>
+            <p class="reservation-description">
+                Every beautiful journey deserves a perfect pause.
+                Reserve your table and let us make your cafe visit special.
+                Walk-ins are always welcome.
+            </p>
+
+            <form id="reservation-form">
+
+                <div class="reservation-field">
+                    <label for="guest-name">Your Name *</label>
+                    <input
+                        type="text"
+                        id="guest-name"
+                        name="guest_name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="reservation-field">
+                    <label for="guest-phone">Phone Number *</label>
+                    <input
+                        type="tel"
+                        id="guest-phone"
+                        name="guest_phone"
+                        placeholder="Your contact number"
+                        autocomplete="tel"
+                        required
+                    >
+                </div>
+
+                <div class="reservation-field">
+                    <label for="booking-date">Visit Date *</label>
+                    <input
+                        type="date"
+                        id="booking-date"
+                        name="booking_date"
+                        required
+                    >
+                </div>
+
+                <div class="reservation-field">
+                    <label for="booking-time">Preferred Time *</label>
+                    <input
+                        type="time"
+                        id="booking-time"
+                        name="booking_time"
+                        required
+                    >
+                </div>
+
+                <div class="reservation-field reservation-guests">
+                    <label for="guest-count">Number of Guests *</label>
+                    <select
+                        id="guest-count"
+                        name="guest_count"
+                        required
+                    >
+                        <option value="" disabled selected>
+                            Select your party size
+                        </option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                        <option value="7+">7+ Guests</option>
+                    </select>
+                </div>
+
+                <div class="reservation-field reservation-request">
+                    <label for="special-request">
+                        Special Requests <span>(Optional)</span>
+                    </label>
+                    <textarea
+                        id="special-request"
+                        name="special_request"
+                        rows="3"
+                        placeholder="Birthday, special seating, or anything we should know..."
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="reservation-submit">
+                    <span>Request a Reservation</span>
+                    <span class="reservation-arrow" aria-hidden="true">↗</span>
+                </button>
+
+                <p
+                    class="reservation-status"
+                    id="reservation-status"
+                    role="status"
+                    aria-live="polite"
+                    hidden
+                ></p>
+
+                <p class="reservation-note">
+                    We look forward to welcoming you. ☕
+                </p>
+
+            </form>
         </div>
 
-    <div class="reservation">
-        <img src="Musafir Cafe at Golden Dusk.png" alt="">
+        <!-- Right: Cafe Image -->
+        <div class="reservation-visual">
+            <img
+                src="Musafir Cafe at Golden Dusk.png"
+                alt="Musafir Cafe glowing in the warm golden evening light"
+                loading="lazy"
+            >
+
+            <div class="reservation-image-caption">
+                <span>A LITTLE PAUSE FROM THE WORLD</span>
+                <p>Good coffee. Slow moments. Beautiful memories.</p>
+            </div>
+        </div>
+
     </div>
-    </div>
- </section>
+</section>
+
 
  <hr class="section-devider">
 
@@ -244,53 +347,191 @@ Whether you're chasing dreams, sharing stories, or simply enjoying a quiet momen
 
 <hr class="section-devider">
 
- <section class="contact" id="contact">
+
+
+
+
+<section class="contact" id="contact">
     <div class="contact-content">
-    <h2>Let's Connect</h2>
 
-    <p> 
-        Have a question, want to reserve a table,
-        or just want to share a beautiful moment?
-        We would love to hear from you
-    </p>
+        <span class="contact-eyebrow">YOUR TABLE IS WAITING</span>
 
-    <div class="contact-info">
-        <p>📍Location: Jait, Mathura, India</p>
-        <p>📞 Phone Number: 9761475451</p>
-        <p>✉️Email Id: codebyshailu@gmail.com</p>
-    </div>
+        <h2>Let's Connect</h2>
 
-<form class="contact-form" id="contact-form">
+        <p class="contact-description">
+            Planning a coffee date, a peaceful meal, or a special
+            celebration? Tell us what you have in mind.
+            We'd love to welcome you to Musafir Cafe.
+        </p>
+
+        <!-- Cafe Contact Information -->
+        <div class="contact-info">
+            <p>📍 Location:
+                <span>Jait, Mathura, India</span>
+            </p>
+
+            <p>📞 Phone:
+                <a href="tel:+919761475451">9761475451</a>
+            </p>
+
+            <p>✉️ Email:
+                <a href="mailto:codebyshailu@gmail.com">
+                    codebyshailu@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <!-- Contact & Table Reservation Form -->
+       
+<form
+    class="contact-form"
+    id="contact-form"
+    action="https://formsubmit.co/ajax/codebyshailu@gmail.com"
+    method="POST"
+>
+    <input
+        type="hidden"
+        name="_subject"
+        value="New Cafe Enquiry — Musafir Cafe"
+    >
 
     <input
         type="text"
-        name="name"
-        placeholder="Your Name"
-        required
+        name="_honey"
+        style="display:none"
+        tabindex="-1"
+        autocomplete="off"
     >
 
-    <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required
-    >
+    <h3 class="contact-form-heading">
+        Tell Us Your Taste
+    </h3>
 
-    <textarea
-        name="message"
-        placeholder="Your Message"
-        required
-    ></textarea>
+    <!-- Personal Details -->
+    <div class="contact-field">
+        <label for="contact-name">Your Name *</label>
+        <input
+            type="text"
+            id="contact-name"
+            name="name"
+            placeholder="What should we call you?"
+            autocomplete="name"
+            required
+        >
+    </div>
 
-    <button type="submit">Send Message ☕</button>
+    <div class="contact-field">
+        <label for="contact-email">Email Address *</label>
+        <input
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+        >
+    </div>
 
+    <div class="contact-field">
+        <label for="contact-phone">Phone Number (Optional)</label>
+        <input
+            type="tel"
+            id="contact-phone"
+            name="phone"
+            placeholder="Your contact number"
+            autocomplete="tel"
+        >
+    </div>
+
+    <!-- Favourite Cafe Drink -->
+    <div class="contact-field">
+        <label for="contact-favourite">Your Cafe Favourite</label>
+        <select id="contact-favourite" name="favourite_drink">
+            <option value="">What do you usually love?</option>
+            <option value="Espresso">Espresso</option>
+            <option value="Cappuccino">Cappuccino</option>
+            <option value="Latte">Latte</option>
+            <option value="Cold Coffee">Cold Coffee</option>
+            <option value="Tea">Tea</option>
+            <option value="Hot Chocolate">Hot Chocolate</option>
+            <option value="Something New">Surprise Me!</option>
+        </select>
+    </div>
+
+    <!-- Food Preference -->
+    <div class="contact-field">
+        <label for="contact-food">Your Food Mood</label>
+        <select id="contact-food" name="food_preference">
+            <option value="">What sounds good today?</option>
+            <option value="Sweet Treats">Sweet Treats & Desserts</option>
+            <option value="Quick Bites">Quick Bites</option>
+            <option value="Comfort Food">Comfort Food</option>
+            <option value="Light Snacks">Light Snacks</option>
+            <option value="Drinks Only">Just Drinks</option>
+            <option value="Exploring Menu">I Love Exploring the Menu</option>
+        </select>
+    </div>
+
+    <!-- Ambience Preference -->
+    <div class="contact-field">
+        <label for="contact-vibe">Your Ideal Cafe Vibe</label>
+        <select id="contact-vibe" name="preferred_ambience">
+            <option value="">Choose your mood</option>
+            <option value="Quiet and Peaceful">Quiet & Peaceful</option>
+            <option value="Friends and Conversation">Friends & Conversation</option>
+            <option value="Work and Study">Work & Study</option>
+            <option value="Music and Relaxation">Music & Relaxation</option>
+            <option value="Cafe Photography">Cafe Photography</option>
+        </select>
+    </div>
+
+    <!-- Discovery Source -->
+    <div class="contact-field">
+        <label for="contact-discovery">How Did You Find Us?</label>
+        <select id="contact-discovery" name="discovery_source">
+            <option value="">We would love to know</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Google Search">Google Search</option>
+            <option value="Friends or Family">Friends or Family</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Walked By">Passed By the Cafe</option>
+            <option value="Other">Somewhere Else</option>
+        </select>
+    </div>
+
+    <!-- Message -->
+    <div class="contact-field contact-message-field">
+        <label for="contact-message">Your Message *</label>
+        <textarea
+            id="contact-message"
+            name="message"
+            placeholder="Share your thoughts, ask about our menu, or tell us what you'd love to experience..."
+            rows="4"
+            required
+        ></textarea>
+    </div>
+
+    <button type="submit" id="contact-submit-btn">
+        <span class="contact-btn-text">Send a Little Note ☕</span>
+    </button>
+
+    <p
+        class="contact-status"
+        id="contact-status"
+        role="status"
+        aria-live="polite"
+        hidden
+    ></p>
+
+    <p class="contact-note">
+        Every good cafe story starts with a hello. 🌿
+    </p>
 </form>
 
     </div>
+</section>
 
- </section>
 
- 
 <footer class="footer">
 
     <div class="footer-container">
@@ -341,7 +582,9 @@ Whether you're chasing dreams, sharing stories, or simply enjoying a quiet momen
 
 </footer>
 
-<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
 
 
 </body>
